@@ -1,0 +1,87 @@
+.section-cta {
+    position: relative;
+    padding: 68px 0 75px;
+    background-color: #0a824e;
+    background-image: url("../img/cta/tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: 47%;
+    background-size: cover;
+    z-index: 1;
+    
+    @media (min-width: 768px) {
+        padding: 73px 0 79px;
+        background-position: center 49%;
+    }
+    
+    @media (min-width: 1200px) {
+        padding: 83px 0 88px;
+        background-position: center 9%;
+    }
+
+}
+
+.section-cta::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 130, 78, 0.7);
+}
+
+.section-cta-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.section-cta__title {
+    margin: 0;
+    margin-bottom: 37px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.36;
+
+    @media (min-width: 768px) {
+        line-height: 1.2;
+        margin-bottom: 52px;
+    }
+
+    @media (min-width: 1200px) {
+        margin-bottom: 49px;
+    }
+
+}
+
+.section-cta span {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 2.2px;
+}
+
+.section-cta__button {
+    display: inline-block;
+    padding: 21px 43px;
+    background-color: white;
+    color: #2bb279;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    transition: background-color 0.2s ease;
+
+    &:hover, &:focus {
+        outline: none;
+        background-color: darken(#302e2e, 20%);
+    }
+}
